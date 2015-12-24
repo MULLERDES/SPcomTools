@@ -1,0 +1,15 @@
+﻿<UserControl x:Class="SplitterJoiner.Views.SplittSetting"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SplitterJoiner.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="70.551" d:DesignWidth="277.754">
+    <Grid>
+        <TextBox x:Name="t1" IsReadOnly="True" TextChanged="t1changed" HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" TextWrapping="Wrap" Text="16384" VerticalAlignment="Top" Width="126"/>
+        <TextBox x:Name="t2" IsReadOnly="True" TextChanged="t2changed" HorizontalAlignment="Left" Height="23" Margin="141,10,0,0" TextWrapping="Wrap" Text="16384" VerticalAlignment="Top" Width="126"/>
+        <Slider  x:Name="spl" HorizontalAlignment="Left" TickFrequency="1" IsSnapToTickEnabled="True" Margin="10,38,0,0" Value="16384" Minimum="0" Maximum="32768" VerticalAlignment="Top" Width="257"/>
+
+    </Grid>
+</UserControl>

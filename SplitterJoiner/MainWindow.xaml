@@ -1,0 +1,21 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SplitterJoiner"
+        xmlns:Views="clr-namespace:SplitterJoiner.Views" x:Class="SplitterJoiner.MainWindow"
+        mc:Ignorable="d" WindowStartupLocation="CenterScreen"
+        Title="Splitter/Joiner" Height="295" Width="625">
+    <Grid>
+        <Button Click="BLoad1FileClick" Content="Open 1 file" HorizontalAlignment="Left" Margin="111,10,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Click="BLoad2FileClick" Content="Open 2 file" HorizontalAlignment="Left" Margin="442,10,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Click="BSplitt1Click"   Content="Splitt" HorizontalAlignment="Left" Margin="111,194,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Click="BSplitt2Click" Content="Splitt" HorizontalAlignment="Left" Margin="442,194,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Click="BJoinClick" Content="Join files" HorizontalAlignment="Left" Margin="272,221,0,0" VerticalAlignment="Top" Width="75"/>
+        <Views:FileInfo x:Name="fileinfo1" HorizontalAlignment="Left" Margin="10,35,0,0" VerticalAlignment="Top"/>
+        <Views:FileInfo x:Name="fileinfo2" HorizontalAlignment="Left" Margin="340,35,0,0" VerticalAlignment="Top"/>
+        <Views:SplittSetting x:Name="splitterSetting1" HorizontalAlignment="Left" Margin="10,131,0,0" VerticalAlignment="Top"/>
+        <Views:SplittSetting x:Name="splitterSetting2" HorizontalAlignment="Left" Margin="340,131,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>
